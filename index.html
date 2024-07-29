@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple To-Do App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-4 text-center py-1">To-Do App</h1>
+    
+    <div class="jumbotron p-3 shadow-sm">
+        <div class="d-flex align-items-center">
+          <input autofocus autocomplete="off" class="form-control mr-3" id="input-box" type="text" style="flex: 1;">
+          <button class="btn btn-primary myActionAddBtn" onclick="addTask()">Add New Item</button>
+          <button class="btn btn-primary myActionUpdateBtn d-none" onclick="updateTask()">Update</button>
+        </div>
+    </div>
+    
+    <ul class="list-group pb-5" id="list-container">
+    </ul>
+    <div><img onclick="BlackColor()" class="powerOff" src="./566359.png" alt="">
+      <img onclick="WhiteColor()" class="powerOn" src="./702814.png" alt=""></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
